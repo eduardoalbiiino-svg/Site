@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrada de materiais</title>
+</head>
+
+<body>
+
+    <main>
+
+        <header>
+            <h1>Entrada de Materiais</h1>
+        </header>
+        <form action="">
+            <table>
+                <tr>
+                    <td>
+                        <label for="material">Material:</label>
+                        <select name="material" id="material" required>
+                            <option value="cimento">Cimento</option>
+                            <option value="areia">Areia</option>
+                            <option value="brita">Brita</option>
+                            <option value="tijolo">Tijolo</option>
+                            <option value="tela">Tela</option>
+                            <option value="tubo">Tubo</option>
+                        </select>
+                    </td>
+
+
+
+                    <td>
+                        <label for="quantidade">Quantidade:</label>
+                        <input type="number" id="quantidade" name="quantidade" required>
+                    </td>
+
+                    <td>
+                        <label for="und">Unidade:</label>
+                        <select name="und" id="und" required>
+                            <option value="kg">Quilograma</option>
+                            <option value="g">Grama</option>
+                            <option value="l">Litro</option>
+                            <option value="ml">Mililitro</option>
+                            <option value="m2">M²</option>
+                            <option value="m3">M³</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="data">Data de Entrada:</label>
+                        <input type="date" id="data" name="data" required>
+                    </td>
+                    <td>
+                        <input type="radio" name="avaria" value="avariado" required>
+                        <label>Avariado</label>
+
+                        <input type="radio" name="avaria" value="sem defeito">
+                        <label>Sem Defeito</label>
+
+
+
+                        <label for="observacao">Observações:</label>
+                        <textarea name="observacao" id="observacao" rows="2" cols="30"></textarea>
+                    </td>
+                </tr>
+            </table>
+
+            <h2>Informações do Fornecedor</h2>
+            <table>
+                <tr>
+
+                    <td>
+                        <label for="fornecedor">Fornecedor:</label>
+                        <select name="fornecedor" id="fornecedor" required>
+                            <option value="votorantim">Votorantim</option>
+                            <option value="quartzolit">Quartzolit</option>
+                            <option value="imbralit">Imbralit</option>
+                            <option value="maxima">Máxima</option>
+                            <option value="denver">Denver</option>
+                            <option value="tigre">Tigre</option>
+                            <option value="soprano">Soprano</option>
+                        </select>
+                    </td>
+
+
+
+                    <td>
+
+                        <label for="cnpj">CNPJ:</label>
+                        <input type="text" id="cnpj" name="cnpj" required>
+
+                    </td>
+
+                    <td>
+                        <label for="numero">Número da Nota Fiscal:</label>
+                        <input type="text" id="numero" name="numero" required>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="Registrar Entrada">
+
+        </form>
+        <footer>
+            <p>&reg; Direitos Autorais Reservados 2026</p>
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
